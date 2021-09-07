@@ -7,51 +7,43 @@
 ![Hypertools example](images/hypertools.gif)
 
 ## Overview
+HyperTools是为了促进基于[降维](https://en.wikipedia.org/wiki/Dimensionality_reduction)的高维度据的可视化探索而设计的。 
+其基本pipeline是输入一个高维度据集（或一系列高维度据集），并在一个单一的函数调用中，降低数据集的维度并创建一个图。 
+该软件包建立在许多熟悉的工具之上，包括[matplotlib](https://matplotlib.org/)、[scikit-learn](http://scikit-learn.org/)和[seaborn](https://seaborn.pydata.org/) 。 
+我们的软件包最近在[Kaggle的No Free Hunch博客](http://blog.kaggle.com/2017/04/10/exploring-the-structure-of-high-dimensional-data-with-hypertools-in-kaggle-kernels/)
+上得到了介绍。 
+如果想了解总体情况，你可能会发现[这个讲座](https://www.youtube.com/watch?v=hb_ER9RGtOM)很有用，[MIND暑期学校](https://summer-mind.github.io)。
 
-HyperTools is designed to facilitate
-[dimensionality reduction](https://en.wikipedia.org/wiki/Dimensionality_reduction)-based
-visual explorations of high-dimensional data.  The basic pipeline is
-to feed in a high-dimensional dataset (or a series of high-dimensional
-datasets) and, in a single function call, reduce the dimensionality of
-the dataset(s) and create a plot.  The package is built atop many
-familiar friends, including [matplotlib](https://matplotlib.org/),
-[scikit-learn](http://scikit-learn.org/) and
-[seaborn](https://seaborn.pydata.org/).  Our package was recently
-featured on
-[Kaggle's No Free Hunch blog](http://blog.kaggle.com/2017/04/10/exploring-the-structure-of-high-dimensional-data-with-hypertools-in-kaggle-kernels/).  For a general overview, you may find [this talk](https://www.youtube.com/watch?v=hb_ER9RGtOM) useful (given as part of the [MIND Summer School](https://summer-mind.github.io) at Dartmouth).
 
 ## Try it!
 
-Click the badge to launch a binder instance with example uses:
-
+单击badge以启动带有样本用途的Binder实例：
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/contextlab/hypertools-paper-notebooks)
 
-or
+或者
 
-Check the [repo](https://github.com/ContextLab/hypertools-paper-notebooks) of Jupyter notebooks from the HyperTools [paper](https://arxiv.org/abs/1701.08290).
+Jupyter notebooks [repo](https://github.com/ContextLab/hypertools-paper-notebooks)
+论文[paper](https://arxiv.org/abs/1701.08290).
 
-## Installation
+## 安装
 
-To install the latest stable version run:
+安装最新版本
 
 `pip install hypertools`
 
-To install the latest unstable version directly from GitHub, run:
+要直接从GitHub安装最新的不稳定版本，请运行：
 
 `pip install -U git+https://github.com/ContextLab/hypertools.git`
 
-Or alternatively, clone the repository to your local machine:
+或者，将repository克隆到本地计算机：
 
 `git clone https://github.com/ContextLab/hypertools.git`
 
-Then, navigate to the folder and type:
+然后，导航到文件夹并键入：
 
 `pip install -e .`
 
-(These instructions assume that you have [pip](https://pip.pypa.io/en/stable/installing/) installed on your system)
-
-NOTE: If you have been using the development version of 0.5.0, please clear your
-data cache (/Users/yourusername/hypertools_data).
+注意：如果你一直在使用0.5.0的开发版本，请清除你的数据缓存（/Users/yourusername/hypertools_data）。
 
 ## Requirements
 
@@ -69,21 +61,20 @@ data cache (/Users/yourusername/hypertools_data).
 + pytest (for development)
 + ffmpeg (for saving animations)
 
-If installing from github (instead of pip), you must also install the requirements:
+如果从github安装（而不是pip），你也必须安装需求。
 `pip install -r requirements.txt`
 
 ### Troubleshooting
-
-If you encounter an error related to installing deepdish (hdf5) on a MacOS system, try installing hdf5 directly using [homebrew](https://brew.sh/):
+如果你在MacOS系统上遇到与安装deepdish(hdf5)有关的错误，请尝试使用[homebrew](https://brew.sh/)直接安装hdf5。
 ```
 $ brew tap homebrew/science
 $ brew install hdf5
 ```
 and then re-start the installation.
 
-## Documentation
+## 文档
 
-Check out our [readthedocs](http://hypertools.readthedocs.io/en/latest/) page for further documentation, complete API details, and additional examples.
+请查看我们的[readthedocs](http://hypertools.readthedocs.io/en/latest/)页面，了解更多的文档、完整的API细节和更多的例子。
 
 ## Citing
 
@@ -122,11 +113,11 @@ For specific information on how to contribute to the project, please see our [Co
 
 To test HyperTools, install pytest (`pip install pytest`) and run `pytest` in the HyperTools folder
 
-## Examples
+## 示例
 
 See [here](http://hypertools.readthedocs.io/en/latest/auto_examples/index.html) for more examples.
 
-## Plot
+## 绘图
 
 ```
 import hypertools as hyp
@@ -135,7 +126,7 @@ hyp.plot(list_of_arrays, '.', group=list_of_labels)
 
 ![Plot example](images/plot.gif)
 
-## Align
+## 对齐
 
 ```
 import hypertools as hyp
@@ -151,7 +142,7 @@ hyp.plot(list_of_arrays, align='hyper')
 ![Align after example](images/align_after.gif)
 
 
-## Cluster
+## 聚类
 
 ```
 import hypertools as hyp
