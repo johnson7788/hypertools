@@ -21,8 +21,7 @@ HyperTools是为了促进基于[降维](https://en.wikipedia.org/wiki/Dimensiona
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/contextlab/hypertools-paper-notebooks)
 
 或者
-
-Jupyter notebooks [repo](https://github.com/ContextLab/hypertools-paper-notebooks)
+测试数据 Jupyter notebooks [repo](https://github.com/ContextLab/hypertools-paper-notebooks)
 论文[paper](https://arxiv.org/abs/1701.08290).
 
 ## 安装

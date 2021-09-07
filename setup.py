@@ -17,9 +17,9 @@ DOWNLOAD_URL = URL
 LICENSE = 'MIT'
 REQUIRES_PYTHON = '>=3.5'
 PACKAGES = find_packages(exclude=('images', 'examples', 'tests'))
-with open('requirements.txt', 'r') as f:
-    REQUIREMENTS = f.read().splitlines()
-# REQUIREMENTS = []
+# with open('requirements.txt', 'r') as f:
+#     REQUIREMENTS = f.read().splitlines()
+REQUIREMENTS = []
 
 DESCRIPTION = 'A python package for visualizing and manipulating high-dimensional data'
 LONG_DESCRIPTION = """\
